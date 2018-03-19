@@ -2,7 +2,7 @@ import os
 import tempfile
 from datetime import datetime
 
-import pytest as pytest
+import pytest
 
 import blog
 from models import BlogPost
