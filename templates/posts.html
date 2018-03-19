@@ -12,6 +12,8 @@
                 <a href="/post/{{ post.id }}">{{ post.title }}</a>
                 (created by: {{ post.author }} {{ post.created }})
             </li>
+        {% else %}
+            <li>No posts yet</li>
         {% endfor %}
     </ul>
 

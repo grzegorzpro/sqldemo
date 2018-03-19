@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from app import app, db
+from blog import app, db
 from models import BlogPost
 
 app.app_context().push()
