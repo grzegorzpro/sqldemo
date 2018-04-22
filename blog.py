@@ -1,11 +1,11 @@
 from flask import Flask
 
-from config import DEBUG, HOST, PORT
+from config import DEBUG, HOST, PORT, DATABASE_URI
 from models import db
 from views import blog
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///sqldemo.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.register_blueprint(blog)
 
