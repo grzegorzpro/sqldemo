@@ -1,5 +1,6 @@
 from flask import Flask
 
+from config import DEBUG, HOST, PORT
 from models import db
 from views import blog
 
@@ -12,4 +13,4 @@ db.init_app(app)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(HOST, PORT, debug=DEBUG)

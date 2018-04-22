@@ -22,3 +22,5 @@ post2 = BlogPost(
 db.session.add(post1)
 db.session.add(post2)
 db.session.commit()
+
+print('DB set up successfully!')
